@@ -1,0 +1,383 @@
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    color: #f0f0f0;
+    background-color: #1c1c1c; /* Темный фон */
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #2b2b2b; /* Темно-серый фон для заголовка */
+    border-bottom: 3px solid #007BFF; /* Синяя линия внизу */
+}
+
+header h1 {
+    margin: 10px 0;
+    color: #f0f0f0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+nav a {
+    color: #007BFF; /* Синие ссылки */
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+nav a:hover {
+    background-color: #0056b3; /* Темно-синий фон при наведении */
+    color: #f0f0f0;
+}
+
+.hero {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.hero-image {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    border: 5px solid #2b2b2b;
+    border-radius: 10px;
+    margin: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7);
+}
+
+.hero-text {
+    font-size: 1.2rem;
+    margin: 10px;
+    max-width: 600px;
+    color: #b0d4ff; /* Светло-синий текст */
+}
+
+.facts, .contact {
+    padding: 20px;
+    background-color: #262626; /* Темный фон */
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.facts h2, .contact h2 {
+    color: #007BFF; /* Синие заголовки */
+    border-bottom: 2px solid #007BFF; /* Синяя линия под заголовком */
+    padding-bottom: 5px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #2b2b2b;
+    color: #f0f0f0;
+    border-top: 3px solid #007BFF; /* Синяя линия вверху */
+}
+
+button {
+    background-color: #007BFF; /* Синяя кнопка */
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3; /* Темно-синий при наведении */
+}
+
+.info-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+}
+
+.info-block {
+    background-color: #262626; /* Темный фон для блоков */
+    color: #f0f0f0;
+    border: 2px solid #007BFF; /* Синяя рамка */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    width: calc(50% - 40px); /* Ширина 50% минус отступы */
+    box-sizing: border-box;
+    text-align: justify;
+}
+
+.info-block h2 {
+    color: #007BFF; /* Синие заголовки */
+    margin-bottom: 10px;
+}
+
+.info-block p {
+    line-height: 1.6;
+    font-size: 1rem;
+}
+.content-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    justify-content: center;
+}
+
+.history-block {
+    background-color: #262626;
+    border: 2px solid #007BFF;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    width: calc(50% - 40px);
+    box-sizing: border-box;
+    color: #f0f0f0;
+}
+
+.history-block h2 {
+    color: #007BFF;
+    margin-bottom: 10px;
+}
+
+.timeline {
+    text-align: center;
+    padding: 20px;
+    background-color: #262626;
+    border: 2px solid #007BFF;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.timeline-image {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7);
+}
+
+.discography {
+    padding: 20px;
+    background-color: #262626;
+    border: 2px solid #007BFF;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    margin-top: 20px;
+    text-align: center;
+}
+
+.discography h2 {
+    color: #007BFF;
+    margin-bottom: 20px;
+    font-size: 2rem;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
+}
+
+.discography .year {
+    margin: 15px 0;
+    background-color: #333;
+    border: 1px solid #555;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.discography .year p {
+    color: #007BFF;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+}
+
+.discography ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.discography ul li {
+    color: #f0f0f0;
+    font-size: 1.2rem;
+    line-height: 1.8;
+    position: relative;
+    padding-left: 25px;
+    text-align: left;
+}
+
+.discography ul li::before {
+    content: "🎵"; /* Иконка музыкальной ноты */
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #007BFF;
+}
+.videos {
+    padding: 20px;
+    background-color: #262626;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    margin: 20px;
+}
+
+.videos h2 {
+    color: #007BFF;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.video-item {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.video-item h3 {
+    color: #f0f0f0;
+    margin-bottom: 10px;
+}
+
+video {
+    width: 100%;
+    max-width: 600px;
+    border: 3px solid #007BFF;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.filmography {
+    padding: 20px;
+    background-color: #262626;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    margin-top: 20px;
+}
+
+.filmography h2 {
+    color: #007BFF;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    text-align: center;
+}
+
+table thead {
+    background-color: #007BFF;
+    color: white;
+}
+
+table th, table td {
+    padding: 10px;
+    border: 1px solid #555;
+}
+
+table img {
+    width: 100px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #2b2b2b;
+    color: #f0f0f0;
+    border-top: 3px solid #007BFF;
+}
+
+header {
+    background-color: #2b2b2b;
+    padding: 10px;
+    text-align: center;
+    border-bottom: 3px solid #007BFF;
+}
+
+header h1 {
+    color: #f0f0f0;
+    margin: 0;
+}
+
+.sources, .contacts {
+    padding: 20px;
+    background-color: #262626;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    margin: 20px;
+}
+
+.sources h2, .contacts h2 {
+    color: #007BFF;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.sources ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sources ul li {
+    margin: 10px 0;
+    font-size: 1.2rem;
+}
+
+.sources ul li a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+.sources ul li a:hover {
+    text-decoration: underline;
+}
+
+.contact-card {
+    text-align: center;
+    padding: 20px;
+    border: 2px solid #007BFF;
+    border-radius: 10px;
+    background-color: #333;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.contact-card p {
+    color: #f0f0f0;
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+.contact-card a {
+    color: #007BFF;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contact-card a:hover {
+    text-decoration: underline;
+}
+
+.icon {
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    margin-right: 5px;
+}

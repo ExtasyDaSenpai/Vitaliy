@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <title>Контакты</title>
+    <style>
+        #map {
+            height: 400px; /* Высота карты */
+            width: 100%; /* Ширина карты */
+            border: 2px solid #007BFF;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="main.html">Главная</a></li>
+                <li><a href="info.html">Общая информация</a></li>
+                <li><a href="history.html">История</a></li>
+                <li><a href="film.html">Фильмография</a></li>
+                <li><a href="sources.html">Источники</a></li>
+            </ul>
+        </nav>
+        <h1>Контакты</h1>
+    </header>
+
+    <main>
+        <section class="contacts">
+            <h2>Свяжитесь с нами</h2>
+            <p>
+                Для связи с администрацией сайта вы можете использовать следующие контакты:
+            </p>
+            <ul>
+                <li>Email: <a href="mailto:contact@beatles.com">word01.lie@icloud.com</a></li>
+                <li>Телефон: +7 (985) 963-2008</li>
+                <li>Адрес: Abbey Road, Лондон, Великобритания</li>
+            </ul>
+        </section>
+
+
+        <section class="contact">
+            <h2>Связаться с нами</h2>
+            <form action="#">
+                <label for="name">Имя:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Сообщение:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+                <button type="submit">Отправить</button>
+            </form>
+        </section>
+
+
+        <section class="map-section">
+            <h2>Локация Abbey Road</h2>
+            <div id="map"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 FARKOV VITALIY SERGEEVICH</p>
+    </footer>
+
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script>
+        // Создание карты
+        var map = L.map('map').setView([51.53206161638749, -0.1773739497688041], 15); // Координаты Abbey Road
+
+        // Добавление слоя OpenStreetMap
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            maxZoom: 19,
+            attribution: '© OpenStreetMap'
+        }).addTo(map);
+
+        // Добавление маркера
+        var marker = L.marker([51.53206161638749, -0.1773739497688041]).addTo(map);
+        marker.bindPopup('Abbey Road, Легендарная студия').openPopup();
+    </script>
+</body>
+</html>
